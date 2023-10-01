@@ -2,9 +2,9 @@ import TestimonialImg from '../../../assets/images/review-men.png'
 
 const TestimonialSection = () => {
   return (
-    <div className="w-full bg-sky-400 px-3 py-12 mt-14">
-        <div className='max-w-3xl mx-auto text-xl font-bold leading-7 text-center text-white md:leading-10 md:text-3xl text-shadow-sm'>
-            <p>"I've saved so much money on my dental treatments with ProDental. Highly recommended!"</p>
+    <div className="w-full bg-sky-400 px-3 py-12 mt-16">
+        <div className='max-w-3xl mx-auto leading-7 text-center text-white md:leading-10'>
+            <p className='text-xl font-bold md:text-3xl text-shadow-sm'>"I've saved so much money on my dental treatments with ProDental. Highly recommended!"</p>
         </div>
         <div className='flex flex-col items-center mt-8'>
             <img src={TestimonialImg} alt="Testimonial image" height={56} width={56} className='rounded-full border-white border-2'/>
