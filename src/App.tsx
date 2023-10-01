@@ -1,11 +1,9 @@
 import { BrowserRouter, Route } from 'react-router-dom'
-import './App.css'
 import { RoutesWithNotFound } from './utilities'
-import HomePage from './pages/HomePage'
 import PageLayout from './utilities/PageLayout'
+import { HomePage } from './pages'
 
 function App() {
-
   return (
     <BrowserRouter>
       <PageLayout>
