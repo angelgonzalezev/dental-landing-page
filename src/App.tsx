@@ -1,11 +1,19 @@
+import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
+import { RoutesWithNotFound } from './utilities'
+import HomePage from './pages/HomePage'
+import PageLayout from './utilities/PageLayout'
 
 function App() {
 
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <BrowserRouter>
+      <PageLayout>
+        <RoutesWithNotFound>
+          <Route path='/' element={<HomePage />} />
+        </RoutesWithNotFound>
+      </PageLayout>
+    </BrowserRouter>
   )
 }
 
